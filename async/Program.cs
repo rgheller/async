@@ -22,7 +22,7 @@ namespace AsyncApp
         private static void DoSomethingSynchronous()
         {
             perc = 1.4f;
-            Console.WriteLine("Doing some synchronous work.");
+            Console.WriteLine("Doing some synchronous work...");
         }
 
         static async Task<float> CalculateTotalAfterTaxAsync(float value)
