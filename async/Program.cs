@@ -22,12 +22,12 @@ namespace AsyncApp
         private static void DoSomethingSynchronous()
         {
             perc = 1.4f;
-            Console.WriteLine("Doing some synchronous work");
+            Console.WriteLine("Doing some synchronous work.");
         }
 
         static async Task<float> CalculateTotalAfterTaxAsync(float value)
         {
-            Console.WriteLine("Started CPU Bound asynchronous task on a background thread");
+            Console.WriteLine("Started CPU Bound asynchronous task on a background thread.");
             var result = await Task.Run(() => Calculate(value));
             Console.WriteLine($"Finished Task. Total of ${value} after tax of 20% is ${result} ");
             return result;
